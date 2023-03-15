@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "29d92d81-1cc9-44f5-99aa-73b058b22514",
+		"name": "raftovs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22864835"
+	},
+	"item": [
+		{
+			"name": "persons",
+			"item": [
+				{
+					"name": "approve blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25JRCI6IjY0MTE5M2RiZTA1YmM0YTNjZDQxZGRhNCIsImlhdCI6MTY3ODg3NTQ3NCwiZXhwIjoxNjc4ODc2Mzc0fQ.uERE3wN3rstfeAxU3Isg7FutrLNmaWgg3ZFuk-W1eG4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blogId\": \"641196f1e05bc4a3cd41ddb0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/person/approveBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"person",
+								"approveBlog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deny blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25JRCI6IjY0MTE5M2RiZTA1YmM0YTNjZDQxZGRhNCIsImlhdCI6MTY3ODg3NDUyMCwiZXhwIjoxNjc4ODc1NDIwfQ.iruOscxHuvSvrlEDf2dIGqiuEm1mU4dfx1PDvwvupBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blogId\": \"641196f1e05bc4a3cd41ddb0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/person/denyBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"person",
+								"denyBlog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user/admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"admin@admin.com\",\n    \"password\" : \"admin\",\n    \"role\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/person/loginPerson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"person",
+								"loginPerson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"admin\",\n    \"email\": \"admin@admin.com\",\n    \"password\": \"admin\",\n    \"mobile\": \"9876543210\",\n    \"role\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/person/addPerson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"person",
+								"addPerson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all person details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/person/allPersonDetail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"person",
+								"allPersonDetail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blogs",
+			"item": [
+				{
+					"name": "add blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25JRCI6IjY0MTE5M2RiZTA1YmM0YTNjZDQxZGRhNCIsImlhdCI6MTY3ODg3NDg0NywiZXhwIjoxNjc4ODc1NzQ3fQ.OENw7j2lDzJ4CoZE99XuKxEd3_YrlrLy0tjNSssq8is",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"title 2\",\n    \"content\": \"content 2\",\n    \"tags\": [\"admin2\", \"blog\"],\n    \"isDeleted\": \"false\",\n    \"isActive\": \"false\",\n    \"isReviewed\": \"false\",\n    \"isPaid\": \"false\"\n    \n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/blogs/addBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"blogs",
+								"addBlog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all active blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/blogs/allBlogsDetail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"blogs",
+								"allBlogsDetail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
